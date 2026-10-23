@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030014"><meta name="description" content="Halo! Saya Vincent, Creative Technologist dan UI/UX Designer."><meta property="og:title" content="Vincent Portofolio | Creative Technologist &amp; UI/UX Designer"><meta property="og:description" content="Antarmuka futuristik dan pengalaman digital yang imersif."><meta property="og:type" content="website"><meta property="og:image" content="/Photo.jpg"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' rx='2' fill='%236366f1'/%3E%3Ctext x='5' y='7.4' font-size='6.5' text-anchor='middle' fill='white' font-family='sans-serif'%3EV%3C/text%3E%3C/svg%3E">
+<title>Vincent Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<div id="splash"><span><span id="sp"></span><i class="cur"></i></span><div id="pg"></div><small class="skip">Tap untuk skip</small></div><div id="bar"></div><div class="aurora"></div><button id="top" aria-label="Kembali ke atas">↑</button>
+<header id="nav"><a class="logo gt" href="#home" id="logo"></a><button id="burger" aria-label="Menu">☰</button>
+<nav id="menu"><a href="#home">Home</a><a href="#about">About</a><a href="#portofolio">Portofolio</a><a href="#contact">Contact</a></nav></header>
+<main>
+<section id="home" class="hero"><span class="badge" id="badge"></span><h1 id="h1"></h1>
+<div class="typed"><span id="typed"></span><i class="cur"></i></div><p id="heroText"></p>
+<div class="btns"><a class="btn ghost" href="#portofolio">Projects ↗</a><a class="btn ghost" href="#contact">Contact ✉</a></div>
+<svg class="art" viewBox="0 0 300 200" aria-hidden="true"><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+<circle cx="70" cy="140" r="38" fill="#cbd0e6"/><circle cx="235" cy="50" r="30" fill="#cbd0e6"/><rect x="60" y="35" width="180" height="115" rx="8" fill="#3b3f9e"/><rect x="70" y="45" width="160" height="95" rx="4" fill="#2c2f7a" stroke="#2dd4bf" stroke-width="4"/>
+<path d="M85 65h50M85 80h90M85 95h70M85 110h100" stroke="#8aa0ff" stroke-width="4" stroke-linecap="round"/><rect x="130" y="150" width="40" height="14" fill="#7c83ff"/><rect x="100" y="164" width="100" height="8" rx="4" fill="#7c83ff"/>
+<rect x="215" y="85" width="50" height="95" rx="8" fill="url(#g)"/><rect x="225" y="120" width="30" height="30" rx="6" fill="#2dd4bf"/><rect x="170" y="25" width="55" height="40" rx="8" fill="#2dd4bf" opacity=".9"/></svg></section>
+<section id="about"><h2 class="st gt" id="aboutTitle"></h2><p class="sub" id="aboutSub"></p>
+<img id="photo" class="photo" alt="Foto profil"><h3 class="hello"><span class="gt">Hello, I'm</span><br><b id="who"></b></h3>
+<p class="body" id="aboutText"></p><blockquote id="quote"></blockquote><a class="btn out" href="#portofolio">‹› View Projects</a><div id="stats" class="stack"></div></section>
+<section id="portofolio"><h2 class="st gt" id="shTitle"></h2><p class="sub" id="shText"></p>
+<div class="tabs"><button class="tab on" data-t="projects">‹› Projects</button><button class="tab" data-t="tech">◈ Tech Stack</button></div>
+<div id="projects" class="stack"></div><div id="tech" class="chips" hidden></div></section>
+<section id="contact"><h2 class="st gt" id="ctTitle"></h2><p class="sub" id="ctText"></p>
+<form id="cform" class="card"><h3 class="gt big">Hubungi</h3><p class="sub l">Ada yang ingin didiskusikan? Kirim saya pesan dan mari kita bicara.</p>
+<input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><input name="name" placeholder="Nama Anda" required maxlength="60"><input name="email" type="email" placeholder="Email Anda" required maxlength="80"><textarea name="message" placeholder="Pesan Anda" rows="6" required maxlength="1500"></textarea>
+<button class="btn grad" type="submit">➤ Kirim Pesan</button><p class="msg" id="cmsg"></p></form>
+<div class="card"><h3 class="line">Connect With Me</h3><div id="socials" class="stack"></div></div>
+<div class="card"><h3 class="line">Comments <span class="gt" id="ccount">(0)</span></h3>
+<form id="mform"><input name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><label>Name <em>*</em></label><input name="name" required maxlength="30" placeholder="Nama kamu"><label>Comment <em>*</em></label><textarea name="text" required maxlength="300" rows="3" placeholder="Tulis komentar..."></textarea>
+<label>Profile Photo <small>(optional)</small></label><label class="file"><input type="file" id="pf" accept="image/*" hidden><span id="pfn">🖼 Choose Profile Photo</span></label><small class="mut">Max file size: 5MB</small>
+<button class="btn grad" type="submit">➤ Post Comment</button><p class="msg" id="mmsg"></p></form><div id="comments"></div></div></section>
+</main><footer id="foot"></footer><script src="app.js"></script></body></html>
